@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>learn Reactjs</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+	<input type="text" id="inp">
+	<button id="add">Добавить задачу</button>
+	<hr>
+<!-- 	<div id="out"></div>
+ -->	
+	<div class="flexed">
+	  <div>
+	    <h2>DO IT</h2>
+	    <div class="tasks-wrapper" >
+	    	<div class="draggable" id="out" onmousedown="dnd(event, 0)"></div>        
+	    </div>
+	  </div>
+	  <div>
+	    <h2>DOING</h2>
+	    <div class="tasks-wrapper" id="doin">
+	      	      
+	    </div>
+	  </div>
+	  <div>
+	    <h2>DONE</h2>
+	    <div class="tasks-wrapper" id="done">
+	            
+	    </div>
+	  </div><div>
+	    <h2>ABORTED</h2>
+	    <div class="tasks-wrapper" id="aborted">
+	            
+	    </div>
+	  </div>
+	</div>
+
+	<script src="js.js"></script>
+	<script src="dnd.js"></script>
+	<script src="dndBrauser.js"></script>
+
+</body>
+</html>
